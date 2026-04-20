@@ -13,4 +13,10 @@ vim.keymap.set('n', '<C-x>', ':Bdelete!<CR>', opts) -- close buffer
 vim.keymap.set('n', '<C-n>', '<cmd> enew <CR>', opts) -- new buffer
 
 -- Toggle line wrapping
-vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', opts)
+vim.keymap.set('n', '<space>lwr', '<cmd>set wrap!<CR>', opts)
+
+-- Normal mode: Log word under cursor
+vim.keymap.set('n', '<space>l', 'yiwoconsole.log("<C-r>":", <C-r>");<Esc>', { desc = 'Quick console.log' })
+
+-- Visual mode: Log selection
+vim.keymap.set('v', '<space>l', 'yoconsole.log("<C-r>":", <C-r>");<Esc>', { desc = 'Quick console.log (selection)' })
