@@ -467,9 +467,9 @@ require('lazy').setup({
   require 'kickstart.plugins.indent_line',
   require 'kickstart.plugins.lint',
   require 'kickstart.plugins.autopairs',
-  require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.gitsigns', -- adds gitsigns recommended keymaps
   require 'custom.plugins.treesitter',
+  require 'custom.plugins.neo-tree',
   require 'custom.plugins.monokai-pro',
   require 'custom.plugins.bufferline',
   require 'custom.plugins.markview',
@@ -510,3 +510,4 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+require 'custom.plugins.statusline'

@@ -9,3 +9,4 @@ vim.o.expandtab = true
 vim.o.autoindent = true
 vim.o.wrap = false
 vim.o.colorcolumn = '80'
+vim.g.mapleader = " "

@@ -27,11 +27,13 @@ return {
         },
       },
       config = function ()
+        print('test')
         require("luasnip").filetype_extend("typescript", { "javascript" })
       end,
       opts = {},
     },
   },
+
   ---@module 'blink.cmp'
   ---@type blink.cmp.Config
   opts = {
