@@ -427,7 +427,8 @@ require('lazy').setup({
   require 'custom.plugins.lsp',
   require 'custom.plugins.autocompletion',
   require 'custom.plugins.autoformatting',
-  require 'custom.plugins.copilot-chat',
+  require 'custom.plugins.copilot',
+  require 'custom.plugins.avante',
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
