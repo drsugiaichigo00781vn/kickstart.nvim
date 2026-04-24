@@ -1,3 +1,4 @@
+require('vim._core.ui2').enable({})
 require 'custom.options'
 require 'custom.keymaps'
 --[[
@@ -429,6 +430,7 @@ require('lazy').setup({
   require 'custom.plugins.autoformatting',
   require 'custom.plugins.copilot',
   require 'custom.plugins.avante',
+  require 'custom.plugins.session',
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
