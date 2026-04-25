@@ -25,6 +25,7 @@ return {
         endpoint = "https://openrouter.ai/api/v1", -- The LLM API endpoint for OpenRouter
         model = "openai/gpt-oss-120b:free", -- The LLM model name (e.g., "openai/gpt-4o-mini", "mistralai/mistral-7b-instruct")
         api_key_name = "OPENROUTER_API_KEY",
+        use_ReAct_prompt = true,
       },
     },
       vim.keymap.set({'n', 'v'}, '<leader>ac', ':AvanteChat<CR>', { desc = 'Open agent chat' }),
@@ -59,9 +60,9 @@ return {
       -- Make sure to set this up properly if you have lazy=true
       'MeanderingProgrammer/render-markdown.nvim',
       opts = {
-        file_types = { "markdown", "Avante" },
+        file_types = { "Avante" },
       },
-      ft = { "markdown", "Avante" },
+      ft = { "Avante" },
     },
   },
 }
