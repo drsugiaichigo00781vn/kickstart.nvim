@@ -66,8 +66,15 @@ return {
 
         -- Keymaps
         local opts = { noremap = true, silent = true, desc = 'Go to Buffer' }
-       vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
-       vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})
+        vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
+        vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})
+        
+        -- Close all other buffers
+        vim.keymap.set("n", "<leader>bo", "<Cmd>BufferLineCloseOthers<CR>", { desc = "Delete other buffers" })
+
+        -- Close buffers to the right/left
+        vim.keymap.set("n", "<leader>br", "<Cmd>BufferLineCloseRight<CR>", { desc = "Delete buffers to the right" })
+        vim.keymap.set("n", "<leader>bl", "<Cmd>BufferLineCloseLeft<CR>", { desc = "Delete buffers to the left" })
         -- vim.keymap.set('n', '<leader>1', "<cmd>lua require('bufferline').go_to_buffer(1)<CR>", opts)
         -- vim.keymap.set('n', '<leader>2', "<cmd>lua require('bufferline').go_to_buffer(2)<CR>", opts)
         -- vim.keymap.set('n', '<leader>3', "<cmd>lua require('bufferline').go_to_buffer(3)<CR>", opts)
