@@ -57,5 +57,11 @@ return { -- Autoformat
       typescript = { 'prettier' },
       ['_'] = { 'prettier' },
     },
+    formatters = {
+      prettier = {
+        -- Forces Prettier to use your .prettierrc if it's being ignored
+        prepend_args = { "--config-precedence", "prefer-file" },
+      },
+    },
   },
 }
