@@ -403,6 +403,7 @@ require('lazy').setup({
       --  Check out: https://github.com/nvim-mini/mini.nvim
     end,
   },
+  { 'mg979/vim-visual-multi' },
 
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
